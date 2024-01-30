@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- include Mocha and Chai from the local node_modules folder -->
+    <script src="./node_modules/mocha/mocha.js"></script>
+    <script src="./node_modules/chai/chai.js"></script>
+    <link rel="stylesheet" href="./node_modules/mocha/mocha.css" />
+  </head>
+
+  <body>
+    <!-- Container for the test results -->
+    <div id="mocha"></div>
+    
+    <!-- Configure Mocha and Chai to use BDD-style tests -->
+    <script>mocha.setup('bdd')</script>
+    <script>
+        var assert = chai.assert;
+        var expect = chai.expect;
+        var should = chai.should();
+    </script>
+
+    <!-- Include source files here... -->
+    <script src="romanNumerals_browser.js"></script>
+
+    <!-- Include spec files here... -->
+    <script src="./tests/romanNumerals_browser.spec.js"></script>
+
+    <!-- Run all our tests (only necessary in the browser) -->
+    <script>mocha.run()</script>
+  </body>
+
+</html>
