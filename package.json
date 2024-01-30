@@ -1,0 +1,27 @@
+{
+  "name": "solaris-test",
+  "version": "1.0.0",
+  "description": "Technical test for Solaris consulting (Roman Numerals)",
+  "main": "romanNumerals.js",
+  "scripts": {
+    "start": "npm run test:node && npm run test:browser",
+    "test:node": "mocha ./tests/romanNumerals_node.spec",
+    "test:browser": "concurrently \"http-server -a localhost -p 8080\" \"open http://localhost:8080/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nooshu/Solaris-test-final.git"
+  },
+  "author": "Matt Hobbs (matt@nooshu.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nooshu/solaris-test/issues"
+  },
+  "homepage": "https://github.com/Nooshu/solaris-test#readme",
+  "devDependencies": {
+    "chai": "4.4.1",
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1",
+    "mocha": "^10.2.0"
+  }
+}
