@@ -21,6 +21,10 @@ describe('Roman Numerals', () => {
     assert.equal(romanNumerals(58), 'LVIII');
   });
 
+  it('should convert 515 to DXV', () => {
+    assert.equal(romanNumerals(515), 'DXV');
+  });
+
   it('should convert 1994 to MCMXCIV', () => {
     assert.equal(romanNumerals(1994), 'MCMXCIV');
   });

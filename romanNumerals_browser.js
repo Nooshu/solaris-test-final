@@ -4,7 +4,7 @@
  
  * @returns {string}; 
  */
-function romanNumeralGenerator(number) {
+function romanNumeral(number) {
   // Store the roman numeral symbols in a single array from 1 (I) to 1000 (M)
   const romanNumerals = [
     ["M", 1000],
